@@ -10,6 +10,6 @@ CREATE TABLE [dbo].[SalesOrder](
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [dbo].[SalesOrder]  WITH CHECK ADD  CONSTRAINT [FK_SalesOrder_Customer] FOREIGN KEY([CustomerID])
-REFERENCES [dbo].[Customer] ([ID])
-GO
+-- ALTER TABLE [dbo].[SalesOrder]  WITH CHECK ADD  CONSTRAINT [FK_SalesOrder_Customer] FOREIGN KEY([CustomerID])
+-- REFERENCES [dbo].[Customer] ([ID])
+-- GO
