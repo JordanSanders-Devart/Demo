@@ -10,6 +10,6 @@ CREATE TABLE [dbo].[PurchaseOrder](
 ) ON [PRIMARY]
 GO
 
--- ALTER TABLE [dbo].[PurchaseOrder]  WITH CHECK ADD  CONSTRAINT [FK_PurchaseOrder_Vendor] FOREIGN KEY([VendorID])
--- REFERENCES [dbo].[Vendor] ([ID])
--- GO
+ALTER TABLE [dbo].[PurchaseOrder]  WITH CHECK ADD  CONSTRAINT [FK_PurchaseOrder_Vendor] FOREIGN KEY([VendorID])
+REFERENCES [dbo].[Vendor] ([ID])
+GO
