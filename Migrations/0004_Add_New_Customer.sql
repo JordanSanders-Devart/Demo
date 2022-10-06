@@ -1,0 +1,5 @@
+﻿CREATE TABLE New_Customer (
+  ID INT IDENTITY
+ ,PersonID INT NOT NULL
+ ,AccountNumber NVARCHAR(25) NOT NULL
+ ,Email NVARCHAR(50) NULL);
