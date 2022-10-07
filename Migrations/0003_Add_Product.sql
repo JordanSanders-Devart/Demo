@@ -1,3 +1,4 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Product]') AND type in (N'U'))
 CREATE TABLE [dbo].[Product](
 	[ID] [int] NOT NULL,
 	[Name] [nvarchar](50) NULL,
