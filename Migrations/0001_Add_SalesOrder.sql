@@ -1,3 +1,4 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SalesOrder]') AND type in (N'U'))
 CREATE TABLE [dbo].[SalesOrder](
 	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[CustomerID] [int] NOT NULL,
