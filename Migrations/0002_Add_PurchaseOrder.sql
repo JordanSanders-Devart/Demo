@@ -1,3 +1,4 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[PurchaseOrder]') AND type in (N'U'))
 CREATE TABLE [dbo].[PurchaseOrder](
 	[ID] [int] NOT NULL,
 	[VendorID] [int] NOT NULL,
